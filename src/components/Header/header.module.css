@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--big-space);
+    color: var(--font-color);
+}
+.logo {
+    height: 45px;
+}
+
+.header div, .nav {
+    display: flex;
+}
+.header div {
+    align-items: flex-end;
+}
+.header div > p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 5px 5px;
+}
+.nav a {
+    display: flex;
+    color: var(--font-color);
+    text-decoration: none;
+    background-color: var(--primary-color-1);
+    padding: var(--small-space);
+    margin: 0 0 0 var(--normal-space);
+    border-radius: 50%;
+    font-size: 20px;
+}

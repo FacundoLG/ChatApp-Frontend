@@ -10,13 +10,15 @@ const Auth:FC<AuthProps> = () => {
   return (
     <div className={styles.auth}>
         <img src={LOGO} alt="" />
-        <div>
-          <form>
-            <p>SingIn</p>
-            <Input placeholder='Username'/>
+          <form className={styles.form}>
+            <p className={styles.form_title}>SingIn</p>
+            <Input placeholder='Username' error='Uwuwu'/>
             <Input placeholder='Password'/>
+            <div className={styles.button_container}>
+              <button>Singin</button>
+              <p>Don&apos;t have an account? Sinup </p>
+            </div>
           </form>
-        </div>
     </div>
   )
 }

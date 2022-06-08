@@ -1,11 +1,31 @@
-import React from 'react'
+import { FC } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
-
-function App () {
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Outlet
+} from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Auth from './pages/Auth/Auth'
+const App:FC = () => {
   return (
     <div className="App">
-      <Header username='Facundo'/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/singin' element={<Auth mode='sing-in'/>}/>
+          <Route path='/singup' element={<Auth mode='sing-up'/>}/>
+          <Route path='/' element={
+            <>
+            <Header username='Facundo'/>
+            <Outlet/>
+            </>
+          }>
+          <Route index element={<Home/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

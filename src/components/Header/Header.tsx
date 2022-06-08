@@ -3,7 +3,7 @@ import LOGO from '../../assets/svgs/Logo.svg'
 import { FC } from 'react'
 import { AiFillSetting, AiFillBell } from 'react-icons/ai'
 interface HeaderProps {
-  username?: string
+  username: string
   notifications_length?: number
 }
 

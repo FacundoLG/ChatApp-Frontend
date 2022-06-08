@@ -1,7 +1,11 @@
+import { render } from '@testing-library/react'
 import Header from './Header'
 
 describe('Tests for Header', () => {
-  test('Header should render', () => {
-    expect(1).toBe(1)
+  const username = 'Facundo'
+  test('Header should render the username', async () => {
+    const header = render(<Header username={username}/>)
+    const text = header.getByText(username)
+    expect(text).toBeInTheDocument()
   })
 })

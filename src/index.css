@@ -7,8 +7,9 @@
   --link-color: #18A3F1;
   --font-color: #fff;
   --small-space: 0.50rem;
-  --normal-space: 0.65rem;
+  --normal-space: 0.8rem;
   --big-space: 1.1rem;
+  --font-family: 'Roboto',sans-serif;
 }
 *{
   box-sizing: border-box;

@@ -14,14 +14,14 @@
     flex-direction: column;
     margin: auto;
     width: 90vw;
-    min-height: 400px;
-    max-width: 400px;
+    min-height: 350px;
+    max-width: 350px;
 }
 
 .form > .button_container {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .button_container > .auth_message{
     font-size: 16px;

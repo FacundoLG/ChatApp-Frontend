@@ -5,7 +5,8 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Outlet
+  Outlet,
+  Navigate
 } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Auth from './pages/Auth/Auth'
@@ -24,6 +25,7 @@ const App:FC = () => {
           }>
           <Route index element={<Home/>}/>
           </Route>
+          <Route path='*' element={<Navigate to={'/singin'}/>} />
         </Routes>
       </BrowserRouter>
     </div>

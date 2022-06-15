@@ -20,13 +20,36 @@
     font-weight: 500;
     margin: 0 0 5px 5px;
 }
+.nav {
+    display: flex;
+    align-items: center;
+}
 .nav a {
     display: flex;
     color: var(--font-color);
     text-decoration: none;
-    background-color: var(--primary-color-1);
+    background-color: var(--white-opa);
     padding: var(--small-space);
     margin: 0 0 0 var(--normal-space);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 18px;
+}
+.nav a:hover {
+    background-color: var(--primary-color-1);
+    transition: 200ms ease-out;
+    animation: shake 1s infinite ease-out;
+}
+@keyframes shake {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }

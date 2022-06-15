@@ -1,4 +1,6 @@
 .button{
+    display: flex;
+    justify-content: center;
     border: none;
     background: var(--primary-color-1);
     padding: var(--normal-space);
@@ -8,5 +10,19 @@
     font-family: var(--font-family);
 }
 .button:hover{
+    cursor: pointer;
+}
+.button_clean{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: var(--small-space);
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: var(--white-opa);
+    color: var(--font-color);
+}
+.button_clean:hover{
     cursor: pointer;
 }
